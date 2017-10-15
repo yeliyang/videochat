@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ecb24e4e-c3bd-4482-9e79-71ef9f00eb1a" name="tmaat" url="https://www.cse.msu.edu/~will1907/tmaat/">
+        <fileTransfer host="arctic.cse.msu.edu" port="22" rootFolder="/user/will1907/web/tmaat" accessType="SFTP" password="dffadfcfdfcddfc6dfcfdfcddfc8dfcbdfc8dfd3df9b" username="will1907">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

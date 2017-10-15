@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TMaaT WebRTC Alpha</title>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="combo_style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<video id="localVideo" autoplay muted></video>
+<video id="remoteVideo" autoplay></video>
+
+<div class="content">
+    <div class="messages"></div>
+    <form class="footer" onsubmit="return false;">
+        <input type="text" placeholder="Your message ...">
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<template data-template="message">
+    <div class="message">
+        <div class="message__name"></div>
+        <div class="message__bubble"></div>
+    </div>
+</template>
+
+<script src="webrtc_alpha_2.js"></script>
+</body>
+</html>

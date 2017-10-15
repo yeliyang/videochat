@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>api test</title>
+</head>
+<body>
+
+<script>
+/*
+    console.log("test 1, should respond with '200' (eventually):");
+    xhr1 = new XMLHttpRequest();
+    xhr1.open("GET","http://35.9.22.105:8555/api/test",true);
+    xhr1.onload = function(e){
+            console.log('TEST ONE COMPLETE');
+            console.log(xhr1.status);
+    };
+    xhr1.send();
+
+    console.log("test 2, should respond with huge JSON:");
+    xhr2 = new XMLHttpRequest();
+    xhr2.open("GET","http://35.9.22.105:8555/api/getItems",true);
+    xhr2.onload = function(e){
+        console.log("TEST 2 COMPLETE");
+        console.log(xhr2.responseText);
+    };
+    xhr2.send();
+
+    console.log("test three, should add a user to the database:");
+    xhr3 = new XMLHttpRequest();
+    name = "spock";
+    xhr3.open("GET","http://35.9.22.105:8555/api/customerRegister?name=" + name + "&email=" + name + "@email.com",true);
+    xhr3.onload = function(e){
+        console.log("TEST 3 COMPLETE: " + name);
+        console.log("1:" + xhr3.responseXML);
+        console.log("2:" + xhr3.response);
+        console.log("3:" + xhr3.responseText);
+    };
+    xhr3.send();
+
+
+    console.log("test four, should add a user to chat queue:");
+    xhr4 = new XMLHttpRequest();
+    user = 5;
+    xhr4.open("GET","http://35.9.22.105:8555/api/customerJoinQueue?customerId=" + user.toString(),true);
+    xhr4.onload = function(e){
+        console.log("TEST 4 COMPLETE: " + user.toString());
+    };
+    xhr4.send();
+ */
+    console.log("test five, getting request queue:");
+    xhr5 = new XMLHttpRequest();
+    xhr5.open("GET","http://35.9.22.105:8555/api/getQueue",true);
+    xhr5.onload = function(e){
+        console.log("TEST 5 COMPLETE:");
+        console.log(xhr5.response);
+        queue = JSON.parse(xhr5.response);
+        console.log(queue[0].customerName);
+    };
+    xhr5.send();
+
+</script>
+
+</body>
+</html>
